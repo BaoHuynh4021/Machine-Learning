@@ -24,7 +24,7 @@ def gradient_descent(x0, eta, limit, loop_max):
 x_start = 5       # x0
 eta = 0.1          # learning rate
 limit = 1e-3       # convergence threshold |f'(x)| < 1e-3
-loop_max = 10000   # max loop executable     
+loop_max = 10000   # prevent infinite loop causes by ping pong effect
 
 #Main
 x_min, loop_total = gradient_descent(x_start, eta, limit, loop_max)
